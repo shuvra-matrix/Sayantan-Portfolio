@@ -258,3 +258,11 @@ small {
 
 
 }
+
+
+
+/* hidden class */
+
+.hidden {
+    display: none;
+}
