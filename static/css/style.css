@@ -13,6 +13,8 @@
 
 
 
+
+
 *,
 *::after,
 *::before {
@@ -94,7 +96,7 @@ nav ul li:first-child {
 /* main page */
 
 .main-section {
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
     padding: 0;
 
 }
@@ -146,12 +148,12 @@ footer a {
 
 footer {
     background-color: #4b0d49;
-    margin: 4rem 0 0 0;
+    margin: 0;
     padding: 1rem 1rem 1rem 1rem;
     padding: 1rem;
     text-align: center;
-    position: relative;
-    bottom: 1px;
+    /* position: relative;
+    bottom: 1px; */
 }
 
 footer ul {
@@ -186,6 +188,176 @@ small {
     font-size: .6rem;
 }
 
+/* about section */
+
+.about-main {
+    background-color: #0d314b;
+    margin: 0;
+    padding-bottom: 2rem;
+
+}
+
+.about-sub-div {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.resume-div {
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 12px;
+    border-bottom: 2px solid var(--aqua);
+
+
+}
+
+.resume-div button {
+    padding: .6rem .5rem;
+    background-color: var(--dkblue);
+    border-radius: 0 0 12px 12px;
+    color: white;
+    font-family: var(--mono);
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-right: 2px solid var(--dkblue);
+}
+
+.resume-div a {
+    text-decoration: none;
+    display: block;
+}
+
+
+.resume-div button:hover {
+    background-color: #4b0d49;
+    cursor: pointer;
+
+}
+
+.about-text-main {
+    flex-basis: 95%;
+    background-color: #171321;
+    border-radius: 12px;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    position: relative;
+    padding: 1rem 1rem 4rem 1rem;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.about-text-main p {
+    text-align: justify;
+}
+
+.about-heading {
+    font-style: var(--mono);
+    padding: 2rem 0rem;
+    margin: 0 auto auto 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.about-image-div {
+    flex-basis: 95%;
+}
+
+.about-image-div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    background-color: #4b0d49;
+    border-radius: 8px;
+    border-right: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+
+
+}
+
+.about-text-main ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    list-style-type: none;
+
+
+}
+
+.about-text-main ul li {
+    flex-basis: 25%;
+}
+
+.about-text-main ul li img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+
+
+
+/* border animation */
+.ani-border {
+    width: 100%;
+    display: block;
+    height: 2px;
+    animation: colorchange 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes colorchange {
+    0% {
+        background: #ff0000;
+    }
+
+    14% {
+        background: #ffa500;
+    }
+
+    28% {
+        background: #ffff00;
+    }
+
+    42% {
+        background: #008000;
+    }
+
+    56% {
+        background: #6a05ad;
+    }
+
+    70% {
+        background: #4b0082;
+    }
+
+    84% {
+        background: #ee82ee;
+    }
+
+    100% {
+        background: #ff0000;
+    }
+}
 
 /* media tag */
 
@@ -209,6 +381,7 @@ small {
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+        margin: 0 auto 8rem auto;
 
     }
 
@@ -233,7 +406,7 @@ small {
 
     footer {
         padding: 2rem 1rem 1rem 1rem;
-        margin: 8rem 0 0 0;
+        margin: 0;
 
     }
 
@@ -253,7 +426,50 @@ small {
         color: white;
     }
 
+    .about-main {
+        padding: 2rem;
+    }
 
+    .about-heading {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+
+
+
+    .about-text-main {
+        padding: 1rem 1rem 4rem 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+
+    }
+
+    .about-sub-div.about-sub-div {
+        justify-content: space-between;
+    }
+
+    .about-heading {
+        text-align: left;
+    }
+
+    .about-text-main {
+        flex-basis: 46%;
+
+    }
+
+
+    .about-image-div {
+        flex-basis: 50%;
+    }
+
+    .about-text-main ul li {
+        flex-basis: 25%;
+    }
+
+    .about-text-main ul li img {
+        width: 40%;
+    }
 
 
 
