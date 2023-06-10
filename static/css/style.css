@@ -29,7 +29,16 @@ body {
     background-color: var(--black);
     color: var(--white);
     font-size: var(--font-size);
+    height: 100vh;
 
+}
+
+section{
+    min-height: 80vh;
+}
+
+footer{
+   min-height:  16vh;
 }
 
 h1,
